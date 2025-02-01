@@ -8,7 +8,7 @@ Este é um aplicativo Flask para gerenciamento de livros, que pode ser executado
 Se ainda não clonou o projeto, faça isso primeiro:
 ```sh
 git clone https://github.com/juliocesar014/docker-pos.git
-cd docker0pos
+cd docker-pos
 ```
 
 
