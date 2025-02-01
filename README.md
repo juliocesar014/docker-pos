@@ -8,27 +8,39 @@ Este é um aplicativo Flask para gerenciamento de livros, que pode ser executado
 Se ainda não clonou o projeto, faça isso primeiro:
 ```sh
 git clone https://github.com/juliocesar014/docker-pos.git
-cd flask-books-app
+cd docker0pos
 ```
 
-### 2️⃣ **Executar o container diretamente do Docker Hub**
+
+### 2️⃣ **Executar com MAKEFILE**
+Para rodar a aplicação com o makefile, execute os comandos abaixo:
+
+```sh
+make build
+````
+
+```sh
+make run
+```
+
+### 3️⃣ **Executar o container diretamente do Docker Hub**
 Para rodar a aplicação sem precisar construir a imagem manualmente:
 ```sh
-docker run -p 5000:5000 juliocesar014/flask-books-app:1.0.0
+docker run -p 5000:5000 juliocesar014/docker-pos:1.0.0 
 ```
 
-### 3️⃣ **Construir a imagem Docker manualmente**
+### 4️⃣ **Construir a imagem Docker manualmente**
 Caso queira construir a imagem a partir do código-fonte:
 ```sh
-docker build -t flask-books-app .
+docker build -t docker-pos .
 ```
 
-### 4️⃣ **Rodar o container localmente**
+### 5️⃣ **Rodar o container localmente**
 ```sh
-docker run -p 5000:5000 flask-books-app
+docker run -p 5000:5000 docker-pos
 ```
 
-### 5️⃣ **Acessar a aplicação**
+### 6️⃣ **Acessar a aplicação**
 Abra o navegador e acesse:
 ```
 http://127.0.0.1:5000/
@@ -37,7 +49,7 @@ http://127.0.0.1:5000/
 ## 🛠️ **Personalizações**
 Se quiser rodar o container em modo interativo ou fazer modificações:
 ```sh
-docker run -it -p 5000:5000 flask-books-app /bin/bash
+docker run -it -p 5000:5000 docker-pos /bin/bash
 ```
 
 ## 📌 **Notas**

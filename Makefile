@@ -19,3 +19,4 @@ shell:
 
 clean:
 	docker rmi -f $(IMAGE_NAME) || true
+	docker rm -f $(CONTAINER_NAME) || true
